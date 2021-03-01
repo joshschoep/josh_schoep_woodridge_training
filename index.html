@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <section class="header">
+    <div class="header">
         <span id="websiteTitle"><h1>Training with Josh</h1></span>
-    </section>
+    </div>
     <article>
         <h2>About me</h2>
         <section>
@@ -38,7 +38,7 @@
         </section>
         <p></p>
     </article>
-    <article>
+    <article class="tabularData">
         <h2>Check out some of my playtimes</h2>
         <table>
             <tr>
@@ -58,5 +58,30 @@
                 <td>210 hours</td>
             </tr>
         </table>
+    </article>
+    <article class="messageMe">
+        <h2>Send me a message!</h2>
+        <form id="messageMeForm">
+            <label for="yourname">Your name</label>
+            <input type="text" id="yourname" name="yourname"><br>
+
+            <label for="message">Your message</label><br>
+            <textarea id="message" name="yourmessage" rows="5" cols="100" placeholder="Write your message here..."></textarea>    
+            <br>
+
+            <label for="messageType">What type of message is this?</label><br>
+            <input type="radio" id="questionType" name="messageType" name="question">
+            <label for="question">A Question<label>
+            <input type="radio" id="commentType" name="messageType" name="comment">
+            <label for="comment">A Comment<label>
+            <input type="radio" id="suggestionType" name="messageType" name="suggestion">
+            <label for="suggestion">A Suggestion<label>
+            <br>
+
+            <label for="wantResponse">Do you want a response?</label>
+            <input type="checkbox" id="wantResponse" name="wantReponse" value="yes"><br>
+
+            <input type="submit">Send message</input>
+        </form>
     </article>
 </body>
