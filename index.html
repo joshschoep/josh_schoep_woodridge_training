@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+    <title>Training with Josh</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Josh Schoep">
+    <meta name="description" content="Training modules for Woodridge Software with Josh Schoep">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <h1>Training with Josh</h1>
+    </header>
+    <article>
+        <h2>About me</h2>
+        <section>
+            <p>
+                Hi! I'm Josh. I'm a programmer with about a year's worth of
+                professional experience. I went to 
+                <a href="https://www.mines.edu">Colorado School of Mines</a>
+                to earn my B.S. in Computer Science before joining LGS Innovations
+                (later CACI International) to do <strong>program and test development</strong>.
+                I now join <em>Woodridge Software</em> to become a full-stack developer,
+                focusing on <strong>cloud development</strong>.
+            </p>
+            <p>
+                I now join Woodridge Software to become a full-stack developer,
+                focusing on cloud development.
+            </p>
+        </section>
+        <section>
+            <p>
+                In my personal life, I'm an avid snowboarder in the winter, and a golfer in the summer.
+                I program on my own and am a member of a poker club where we play low-stakes, mostly fun
+                games every week. I've been learning to cook during the quarantine, and also have been
+                regularly playing video games like Phasmophobia, <abbr title="Counter Strike: Global Offensive">CS:GO</abbr>,
+                and Civilization V/VI.
+            </p>
+        </section>
+    </article>
+    <article class="tabular-data">
+        <h2>Check out some of my playtimes</h2>
+        <table>
+            <tr>
+                <th>Game</th>
+                <th>Playtime</th>
+            </tr>
+            <tr>
+                <td>Civilization V</td>
+                <td>126 hours</td>
+            </tr>
+            <tr>
+                <td>Terraria</td>
+                <td>170 hours</td>
+            </tr>
+            <tr>
+                <td>Counter Strike</td>
+                <td>210 hours</td>
+            </tr>
+        </table>
+    </article>
+    <article class="message-me">
+        <h2>Send me a message!</h2>
+        <form id="messageMeForm">
+            <div class="form-input">
+                <label for="yourname">Your name</label>
+                <input type="text" id="yourname" name="yourname">
+            </div>
+            
+            <div class="form-input">
+                <label for="message">Your message</label>
+                <textarea id="message" name="yourmessage" rows="5" cols="100" placeholder="Write your message here..."></textarea>
+            </div>
+
+            <div class="form-input">
+                <label for="messageType">What type of message is this?</label>
+                <input type="radio" id="questionType" name="messageType" name="question">
+                <label for="question">A Question<label>
+                <input type="radio" id="commentType" name="messageType" name="comment">
+                <label for="comment">A Comment<label>
+                <input type="radio" id="suggestionType" name="messageType" name="suggestion">
+                <label for="suggestion">A Suggestion<label>
+            </div>
+            <div class="form-input">
+                <label for="wantResponse">Do you want a response?</label>
+                <input type="checkbox" id="wantResponse" name="wantReponse" value="yes"><br>
+            </div>
+            <div class="form-input">
+                <input type="submit" value="Send message"></input>
+            </div>
+        </form>
+    </article>
+</body>
