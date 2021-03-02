@@ -46,7 +46,7 @@ class Circle {
 
     getLeft() {
         let current = this.num - 1;
-        let least = (this.num - 3) - (this.num - 3) % 4;
+        let least = (this.num - 1) - (this.num - 1) % 4;
         let left = [];
         while(current > least){
             left.push(current);
