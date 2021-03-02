@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <title>Click Count with JS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="click_jquery.js"></script>
+</head>
+<style>
+    button {
+        margin: 1em;
+    }
+</style>
+<body>
+    <div style="display: flex; flex-direction: column; justify-content: center; height: 100vh">
+        <div style="display: flex; justify-content: center;">
+            <button id="clicker" onclick="button_clicked()">Click me!</button>
+            <button onclick="show_clicks()">How many?</button>
+        </div>
+        <div style="text-align: center;">
+            <p id="clicked-text" style="display: none;">clicks: 0</p>
+        </div>
+    </div>
+</body>
