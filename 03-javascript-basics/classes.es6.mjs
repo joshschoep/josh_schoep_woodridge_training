@@ -1,4 +1,4 @@
-class Animal {
+export class Animal {
     name;
     feet;
 
@@ -18,9 +18,9 @@ class Animal {
     getName() {
         return this.name;
     }
-}
+};
 
-class Dog extends Animal {
+export class Dog extends Animal {
     speak() {
         console.log("Woof");
     }
@@ -28,9 +28,9 @@ class Dog extends Animal {
     howl() {
         console.log("Awoooo");
     }
-}
+};
 
-class Snake extends Animal {
+export class Snake extends Animal {
     constructor(name = "Hank") {
         super(name);
         this.feet = 0;
@@ -44,22 +44,6 @@ class Snake extends Animal {
         console.log("slither slither");
         this.speak();
     }
-}
+};
 
-var hank = new Animal();
-console.log("Working with", hank.getName(), "the Animal");
-hank.speak();
-console.log("Hank has", hank.getFeet(), "feet");
-console.log("\n\n\n");
-
-var alfred = new Dog("Alfred");
-console.log("Working with", alfred.getName(), "the Dog");
-alfred.speak();
-alfred.howl();
-console.log("\n\n\n");
-
-var george = new Snake("George");
-console.log("Working with", george.getName(), "the Snake");
-console.log("George has", george.getFeet(), "feet");
-george.speak();
-george.slither();
+// export {Animal, Dog, Snake};
