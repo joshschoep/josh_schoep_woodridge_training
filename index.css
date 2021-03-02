@@ -1,0 +1,68 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #eee;
+    margin: 0;
+}
+
+header {
+    margin: 0;
+    padding: 1em;
+    background-color: #fa8;
+    text-align: center;
+}
+
+article {
+    margin: auto;
+    padding: 2rem;
+    max-width: 1080px;
+}
+
+.tabular-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabular-data tr {
+    min-height: 30px;
+    height: 2.5em;
+}
+
+.tabular-data td, .tabular-data th {
+    padding: 0.5em;
+    text-align: center;
+}
+
+.tabular-data td:first-child {
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+}
+
+input[type=text], input[type=password], input[type=number], textarea {
+    display: block;
+}
+
+input[type="submit"], button {
+    background-color: white;
+}
+
+.form-input {
+    padding-bottom: 1em;
+}
+
+.form-input:last-of-type {
+    padding-bottom: unset;
+}
+
+.form-input label {
+    line-height: 1.5em;
+}
