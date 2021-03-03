@@ -7,7 +7,7 @@ class Circle {
         this.element = element;
     }
 
-    gridclicked(num){
+    gridClicked(num){
         if(this.num === num){
             this.element.css("background-color", "lightgrey");
             this.setData();
@@ -69,9 +69,9 @@ class Circle {
 
 var grid = [];
 
-function user_clicked(val){
+function userClicked(val){
     for(let i = 0; i < grid.length; i++){
-        grid[i].gridclicked(val);
+        grid[i].gridClicked(val);
     }
 }
 
@@ -80,7 +80,7 @@ $(document).ready(() => {
         let row = $('<div class="row"></div>').appendTo(".grid");
         for(let j = 1; j <= 4; j++){
             let val = 4 * i + j;
-            let circleq = $('<div class="circle" onclick="user_clicked('+val+')">'+val+'</div>').appendTo(row);
+            let circleq = $('<div class="circle" onclick="userClicked('+val+')">'+val+'</div>').appendTo(row);
             grid.push(new Circle(val, circleq));
         }
     }

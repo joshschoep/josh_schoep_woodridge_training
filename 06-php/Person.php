@@ -1,8 +1,14 @@
 <?php
 class Person {
-    private $name = "Billy Bob";
-    private $age = 19;
-    private $favorite_color = "Blue";
+    private $name;
+    private $age;
+    private $favorite_color;
+
+    function __construct($name = "Billy Bob", $age = 19, $favorite_color = "Blue") {
+        $this->name = $name;
+        $this->age = $age;
+        $this->favorite_color = $favorite_color;
+    }
 
     public function setName(string $name): void {
         $this->name = $name;
@@ -26,6 +32,13 @@ class Person {
 
     public function getFavoriteColor(): string {
         return $this->favorite_color;
+    }
+
+    public function __toString()
+    {
+        return '<h2>'.$this->getName().'</h2>'.
+        '<p>This person is '.$this->getAge().' years old</p>'.
+        '<p>This person\'s favorite color is '.$this->getFavoriteColor().'</p>';
     }
 };
 ?>

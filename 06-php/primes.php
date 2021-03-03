@@ -27,13 +27,18 @@ function primeCheck($num) {
         exit("Requested max value ".$n." is not an integer, or is below 0");
     }
 
-    echo "<h1>The first ".$n." primes:</h1>";
+    echo "<h1>The first $n primes:</h1>";
     echo "<p>";
-    for($i = 2; $i < $n; $i++){
-        if(primeCheck($i)){
-            echo $i.", ";
+    $iterator = 2;
+    $count = 0;
+    while($count < $n){
+        if(primeCheck($iterator)){
+            echo "$iterator, ";
+            $count++;
         }
+        $iterator++;
     }
     echo "</p>";
 
 ?>
+</body>
