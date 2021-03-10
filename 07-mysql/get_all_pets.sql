@@ -8,7 +8,9 @@ SELECT
     CONCAT(Owners.first_name, ' ', Owners.last_name) AS 'Owner Full Name',
     Owners.occupation AS 'Owner Occupation',
     Owners.age AS 'Owner Age'
+
     FROM People AS Owners, Pets
+    
     WHERE Pets.owner_id = Owners.id
 ;
 
