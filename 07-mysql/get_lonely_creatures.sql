@@ -8,7 +8,7 @@ SELECT id, CONCAT(first_name, ' ', last_name) AS name
 UNION ALL
 SELECT id, name 
     FROM Pets
-    WHERE (SELECT COUNT(*) FROM People WHERE Pets.owner_id = People.id) = 0
+    WHERE owner_id IS NULL
 ;
 
 COMMIT;
